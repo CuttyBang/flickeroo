@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Flikeroo | Background Images</title>
+  <meta name="description" content="A Flickr search for desktop, tablet and mobile background images">
+  <meta name="author" content="Nathan McElwain">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="">
+  <link rel="apple-touch-icon" href="">
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Leckerli+One|Dosis:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body class="site-wrapper">
+  <header class="cover-container">
+    <div class="inner cover">
+      <img id="mainLogo" class="logo" src="assets/img/flickeroo-logo.png" alt="Flickeroo Logo"/>
+      <h1 class="cover-heading">Background images from Flickr <br>made easy!</h1>
+      <p class="lead">for desktop, tablet, and mobile</p>
+    </div>
+  </header>
+  <section class="cover-container">
+    <div class="cover">
+      <div id="alert" class="alert alert-warning alert-dismissible fade in hidden" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Wait!</strong> I need a search query AND a device size!
+      </div>
+      <div class="btn-group btn-group-lg" role="group" aria-label="device sizes">
+        <button type="button" class="btn btn-default" id="small"><i class="fa fa-mobile"></i></button>
+        <button type="button" class="btn btn-default" id="med"><i class="fa fa-tablet"></i></button>
+        <button type="button" class="btn btn-default" id="large"><i class="fa fa-desktop"></i></button>
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="search-query">Search Query</label>
+        <input type="text" class="form-control" id="seach-query" placeholder="warehouse, pattern, etc."/>
+        <button type="submit" class="btn btn-primary btn-lg inner" id="submit">GO!</button>
+      </div>
+    </div>
+  </section>
+  <div id="partition"></div>
+  <section class="photo-container">
+  </section>
+  <footer class="mastfoot">
+  </footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
+  <!--script type="text/javascript" src="assets/js/vendor/"></script-->
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
